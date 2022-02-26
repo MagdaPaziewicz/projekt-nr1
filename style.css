@@ -1,0 +1,296 @@
+/* ogólne */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* psek nawigacji */
+
+.nav {
+    background: darkslategray;
+    position: fixed;
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 2;
+}
+
+.nawigacja-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+    max-width: 960px;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+.logo-link {
+    color: white;
+}
+
+.nawigacja-link:nth-child(1) {
+    margin: 50px;
+}
+
+.nawigacja-link:nth-child(2) {
+    margin-right: 50px;
+}
+
+.nawigacja-link:last-child {
+    cursor: not-allowed;
+}
+
+.nawigacja-link {
+    color: white;
+    letter-spacing: 1px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* przedstawienie firmy */
+
+.header {
+    position: relative;
+    height: 100vh;
+    background-image: url(https://cdn.pixabay.com/photo/2021/12/23/03/58/da-guojing-6888603_960_720.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
+    z-index: 1;
+}
+
+.cień {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.25;
+    z-index: -1;
+}
+
+.header_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    max-width: 960px;
+    margin:  0 auto;
+}
+
+.glowny_tekst {
+    margin: 0;
+    padding: 0;
+    font-size: 3.6rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.glowny_tekst1 {
+    margin: 10px 0;
+    padding: 0;
+    font-size: 3.6rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.podtekst {
+    margin: 50px 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.header_link_oferta {
+    width: 200px;
+    padding: 10px 40px;
+    border: 3px solid white;
+    background: none;
+    font-size: 3rem;
+    color: white;
+    letter-spacing: 2px;
+    transition: color background 1s;
+}
+
+.header_link_oferta:hover {
+    color: black;
+    background: white;
+}
+
+/* sekcja o nas */
+
+.o_nas {
+    max-width: 960px;
+    width: 100%;
+    padding: 40px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tytul_specjalisci {
+    margin-left: 20px;
+    font-size: 4rem;
+    text-align: left;
+}
+
+.specjalisci_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.box:nth-child(1) .zdjęcie {
+    background-image: url(https://cdn.pixabay.com/photo/2015/03/03/18/58/woman-657753_960_720.jpg);
+}
+
+.zdjęcie {
+    width: 20%;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    background-position: top;
+    border-radius: 50%;
+}
+
+.o_ludziach {
+    width: 75%;
+}
+
+.nazwisko {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.opis {
+    margin-top: 30px;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.box:nth-child(2) .zdjęcie {
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/29/09/38/adult-1868750_960_720.jpg);
+}
+
+.box:nth-child(2) .o_ludziach {
+    text-align: right;
+}
+
+
+/* oferta */
+
+.oferta {
+    width: 100%;
+    padding: 40px 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #405d78;
+}
+
+.dla_tytułu {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.oferta_wrapper {
+    margin: 0 auto;
+}
+
+.tytul_oferta {
+    margin-left: 20px;
+    font-size: 4rem;
+    text-align: left;
+}
+
+
+.oferta_container {
+    max-width: 780px;
+    margin: 0 auto;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.kwadrat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    aspect-ratio: 1/1;
+    margin: 35px;
+    background-color: white;
+}
+
+.kwadrat:first-child {
+    position: relative;
+    text-align: center;
+}
+
+.kwadrat:first-child .kółko {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: tomato;
+    border-radius: 50%;
+}
+
+.usługa1 {
+    font-size: 2.4rem;
+    color: black;
+}
+
+.nowość {
+    font-size: 1.4rem;
+    color: black;
+}
+
+.footer {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: darkslategray;
+    color: white;
+    padding: 0 10px;
+}
+
+.footer_wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.stopka {
+    font-size: 2rem;
+}
+
+.social_media {
+    font-size: 4rem;
+    padding: 10px;
+}
+
+.footer__social-media .fa-brands:first-child {
+    margin-right: 20px;
+}
+
+.fa-brands {
+    font-family: "Font Awesome 5 Brands";
+}
